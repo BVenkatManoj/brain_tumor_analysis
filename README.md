@@ -647,7 +647,7 @@ The layer visualization helps in understanding:
 - Feature extraction workflow
 
 ```markdown
-![Layer Architecture](./layer.png)
+![Layer Architecture](layer.png)
 ```
 
 ---
@@ -667,7 +667,7 @@ The feature maps demonstrate how the model progressively learns:
 This helps in understanding how Deep Learning extracts important features from MRI scans.
 
 ```markdown
-![Layer Result](./layer_result.png)
+![Layer Result](layer_result.png)
 ```
 
 ---
@@ -691,7 +691,7 @@ The visualization helps verify:
 Understanding the dataset is important before training Deep Learning models for medical image classification.
 
 ```markdown
-![Training Set](./training_set.png)
+![Training Set](training_set.png)
 ```
 
 ---
@@ -714,7 +714,7 @@ This indicates:
 A higher ROC curve and AUC value indicate better model performance in healthcare applications.
 
 ```markdown
-![ROC Curve](./roc.png)
+![ROC Curve](roc.png)
 ```
 
 ---
@@ -733,7 +733,7 @@ The prediction output demonstrates:
 The model successfully predicts whether a tumor is present or absent in MRI images.
 
 ```markdown
-![Prediction Results](./prediction.png)
+![Prediction Results](prediction.png)
 ```
 
 ---
@@ -756,7 +756,7 @@ Final evaluation loss achieved:
 ## ✅ Loss = 0.5912
 
 ```markdown
-![Loss Graph](./loss_graph.png)
+![Loss Graph](loss_graph.png)
 ```
 
 ---
@@ -775,7 +775,7 @@ This visualization highlights:
 Grad-CAM improves the interpretability and transparency of the Deep Learning model, which is especially important in medical AI applications.
 
 ```markdown
-![Grad-CAM Visualization](./grad_cam.png)
+![Grad-CAM Visualization](grad_cam.png)
 ```
 
 ---
@@ -800,7 +800,7 @@ This indicates that very few tumor-positive MRI scans were missed during predict
 The confusion matrix demonstrates strong classification capability and balanced prediction performance.
 
 ```markdown
-![Confusion Matrix](./confusion_matrix.png)
+![Confusion Matrix](confusion_matrix.png)
 ```
 
 ---
