@@ -380,40 +380,88 @@ This improved the final classification performance.
 
 ---
 
-# 📊 Evaluation & Visualization
-
-Several evaluation techniques were used to measure model performance.
-
-## Evaluation Metrics
-
-### Accuracy
-Measures overall prediction correctness.
-
-### Precision
-Measures how many predicted tumors were actually tumors.
-
-### Recall
-Measures how many actual tumors were correctly detected.
-
-### F1-Score
-Balances precision and recall.
-
-### Confusion Matrix
-Analyzes correct and incorrect predictions.
-
-### ROC Curve
-Evaluates classification performance across thresholds.
-
-### Precision-Recall Curve
-Measures model performance on imbalanced data.
-
----
-
 # 📈 Achieved Performance
 
 | Metric | Performance |
 |--------|-------------|
-| Test Accuracy | ~88% |
+| Test Accuracy | 88.52% |
+| Precision (Overall) | 90.48% |
+| Recall (Overall) | 90.16% |
+| F1 Score | 91.67% |
+| AUC (Precision-Recall Curve) | 96.31% |
+| R² Score | 0.6518 |
+| Loss | 0.5912 |
+| False Negatives | 4 |
+| Classification Type | Binary |
+| Model Type | Transfer Learning |
+| Framework | TensorFlow/Keras |
+
+The model achieved strong classification performance for brain tumor detection tasks, particularly in identifying tumor-positive MRI scans with high recall and precision.
+
+---
+
+## 📊 Performance Analysis
+
+### Accuracy
+The model achieved an overall test accuracy of **88.52%**, demonstrating reliable classification capability for MRI brain tumor detection.
+
+### Precision
+The overall precision score of **90.48%** indicates that most MRI images predicted as tumors were correctly classified.
+
+### Recall
+The model achieved a recall score of **90.16%**, meaning it successfully identified the majority of actual tumor cases. High recall is especially important in medical diagnosis because missing tumor cases can be dangerous.
+
+### F1 Score
+An F1 Score of **91.67%** shows a strong balance between precision and recall, indicating stable classification performance.
+
+### AUC Score
+The model achieved an **Area Under the Precision-Recall Curve (AUC) of 96.31%**, demonstrating excellent discrimination capability between tumor and non-tumor MRI images.
+
+### False Negatives
+The model produced only **4 false negatives**, meaning very few tumor-positive cases were missed during prediction.
+
+### Loss
+The final evaluation loss of **0.5912** indicates effective learning and convergence during training.
+
+### R² Score
+The R² score of **0.6518** reflects the model’s ability to explain prediction variability and learning effectiveness.
+
+---
+
+## 🧠 Importance of These Metrics in Medical AI
+
+In healthcare applications, evaluation metrics are extremely important because incorrect predictions can directly affect patient diagnosis.
+
+### Why Recall Matters
+High recall ensures that most tumor-positive cases are detected correctly. In medical systems, reducing false negatives is critical because missed tumor cases can delay treatment.
+
+### Why Precision Matters
+High precision reduces incorrect tumor predictions and minimizes unnecessary medical anxiety and further testing.
+
+### Why F1 Score Matters
+The F1 score balances both precision and recall, making it one of the best evaluation metrics for medical image classification tasks.
+
+### Why AUC Matters
+A high AUC score indicates that the model can effectively separate tumor and non-tumor MRI scans across different prediction thresholds.
+
+---
+
+## 📌 Model Performance Summary
+
+The Brain Tumor Detection model demonstrated:
+
+- High recall for tumor identification
+- Strong precision for reliable predictions
+- Balanced F1 score performance
+- Excellent AUC score
+- Low false negative count
+- Effective transfer learning capability using MobileNetV2
+
+These results indicate that the model is highly suitable for AI-assisted medical image classification and healthcare applications.
+# 📈 Achieved Performance
+
+| Metric | Performance |
+|--------|-------------|
 | Classification Type | Binary |
 | Model Type | Transfer Learning |
 | Framework | TensorFlow/Keras |
